@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('./fonts/Roboto-Medium.ttf');
+}
+
+:root{
+  font-family: RobotoRegular;
+  line-height: 1.5;
+  background-color: #111;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

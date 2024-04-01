@@ -1,0 +1,15 @@
+#light .header{
+    background-color: #fafafa;
+    
+}
+
+#dark .header{
+    background-color: #222;
+}
+
+
+.logo{
+    transform: translate(20px, 15px);
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,53 @@
+#light{
+    color: #232323;
+}
+
+#dark{
+    color: white;
+}
+
+.character-list{
+    flex-wrap: wrap;
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    align-items:start ;
+    box-sizing: border-box;
+}
+
+.personaje{
+    padding: 13px;
+    border-radius: 6px;
+    margin-right: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 90ms ease-in-out;
+}
+
+.personaje:hover{
+    transform: scale(110%,110%);
+    transition: 90ms ease-in-out;
+
+}
+
+#dark .personaje{
+    background-color: #2222228f;
+    transition: 90ms ease-in-out;
+}
+
+#dark .personaje:hover{
+    background-color: #222222c7;
+    transition: 90ms ease-in-out;
+}
+
+#light .personaje{
+    background-color: #dbdbdb8f;
+    transition: 90ms ease-in-out;
+}
+
+#light .personaje:hover{
+    background-color: #dbdbdbc7;
+    transition: 90ms ease-in-out;
+}
+
