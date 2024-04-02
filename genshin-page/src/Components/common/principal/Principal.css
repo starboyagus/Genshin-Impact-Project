@@ -1,10 +1,3 @@
-#light{
-    color: #232323;
-}
-
-#dark{
-    color: white;
-}
 
 .character-list{
     flex-wrap: wrap;
@@ -51,3 +44,23 @@
     transition: 90ms ease-in-out;
 }
 
+.referencia{
+    text-decoration: none !important;
+    outline: none;
+}
+
+#light .referencia{
+    color: #222
+}
+
+#dark .referencia{
+    color: #fafafa
+}
+
+#light .referencia:hover{
+    color: #000000
+}
+
+#dark .referencia:hover{
+    color: #e6e6e6
+}

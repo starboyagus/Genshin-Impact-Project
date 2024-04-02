@@ -3,6 +3,11 @@
   src: url('./fonts/Roboto-Medium.ttf');
 }
 
+@font-face{
+  font-family: 'RobotoBold';
+  src: url('./fonts/Roboto-Bold.ttf')
+}
+
 :root{
   font-family: RobotoRegular;
   line-height: 1.5;

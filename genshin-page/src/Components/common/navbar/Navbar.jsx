@@ -8,7 +8,7 @@ function Navbar(){
             <a href="/tierlist" className="navbar-item">Tier List</a>
             <a href="/guia" className="navbar-item">Guia</a>
             <a href="/build" className="navbar-item">Build</a>
-            <a href="/putupau" className="navbar-item">Leaks</a>
+            <a href="/leaks" className="navbar-item">Leaks</a>
         </section>
     )
 }

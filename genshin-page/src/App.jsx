@@ -6,17 +6,22 @@ import { createContext, useState } from 'react'
 import './App.css'
 
 
-import { Header, Principal } from './Components/common'
+import { Header, Principal, Tierlist, Error } from './Components/common';
 
 const router = createBrowserRouter([{
   path: '/',
   element: <Principal />,
-  errorElement: 'error'
-}]);
+  errorElement: <Error />,
+},
+{
+  path: '/tierlist',
+  element: <Tierlist />,
+}
+]);
 export const ThemeContext = createContext(null);
 
 export function App() {
-  const[theme, setTheme] = useState("dark")
+  const[theme, setTheme] = useState("light")
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
   }
@@ -26,7 +31,6 @@ export function App() {
         <>
           <Header/>
           <RouterProvider router={router} />
-          
         </>
       </div>
     </ThemeContext.Provider>

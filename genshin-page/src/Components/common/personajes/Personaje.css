@@ -5,21 +5,31 @@
 .release-personaje-new{
     text-align: center;
     color: #1dcf2c;
+    text-decoration: none;
 }
 
 .legendary{
     background-image: url(https://rerollcdn.com/STARRAIL/Rarity/5_sm.png);
     order: -1;
+    max-width: 100%;
+    display: block;
     background-size: contain;
     background-position: 20%;
     background-attachment: local;
 }
 
 .normal{
-    background-color: blue;
+    background-image: url(https://rerollcdn.com/STARRAIL/Rarity/4_sm.png);
+    max-width: 100%;
+    display: block;
+    order: -1;
+    background-size: contain;
+    background-position: 20%;
+    background-attachment: local;
 }
 .nombre-personaje{
     font-size: 20px;
+
 }
 
 .elem{

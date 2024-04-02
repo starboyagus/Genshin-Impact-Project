@@ -43,12 +43,14 @@ function Personaje({nombre, foto, elemento, nuevo, rareza}){
 
     return(
         <section className='personaje'>
+            <a href={nombre} className='referencia'>
             <img src={foto} className={rareza}/>
             <div className='Textos'>
             <span className='nombre-personaje'> {nombre} </span>
             <img src={elementogen()} alt={elemento} className='elem' />
             </div>
             <p className={releasePersonaje}>{text}</p>
+            </a>
         </section>
     )
 };

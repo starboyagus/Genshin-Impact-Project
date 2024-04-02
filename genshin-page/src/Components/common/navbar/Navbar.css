@@ -5,6 +5,7 @@
 }
 
 #light .navbar-item{
+    font-family: RobotoBold;
     font-size: 15px;
     display: flex;
     justify-content: center;
