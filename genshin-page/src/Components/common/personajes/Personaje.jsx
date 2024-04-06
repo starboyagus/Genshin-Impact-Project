@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Personaje.css'
 
-function Personaje({nombre, foto, elemento, nuevo, rareza}){
+function Personaje({nombre, elemento, nuevo, rareza}){
     const [isNew] = useState(nuevo)
 
     const text = isNew ? 'Nuevo' : 'No'
@@ -44,7 +44,7 @@ function Personaje({nombre, foto, elemento, nuevo, rareza}){
     return(
         <section className='personaje'>
             <a href={nombre} className='referencia'>
-            <img src={foto} className={rareza}/>
+            <img src={'https://rerollcdn.com/GENSHIN/Characters/1/'+nombre+'.png'} className={rareza}/>
             <div className='Textos'>
             <span className='nombre-personaje'> {nombre} </span>
             <img src={elementogen()} alt={elemento} className='elem' />
