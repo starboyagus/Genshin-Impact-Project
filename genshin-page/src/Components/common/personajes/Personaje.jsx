@@ -44,12 +44,12 @@ function Personaje({nombre, elemento, nuevo, rareza}){
     return(
         <section className='personaje'>
             <a href={nombre} className='referencia'>
-            <img src={'https://rerollcdn.com/GENSHIN/Characters/1/'+nombre+'.png'} className={rareza}/>
-            <div className='Textos'>
-            <span className='nombre-personaje'> {nombre} </span>
-            <img src={elementogen()} alt={elemento} className='elem' />
-            </div>
-            <p className={releasePersonaje}>{text}</p>
+                <img src={'https://rerollcdn.com/GENSHIN/Characters/1/'+nombre+'.png'} className={rareza}/>
+                <div className='Textos'>
+                <span className='nombre-personaje'> {nombre} </span>
+                <img src={elementogen()} alt={elemento} className='elem' />
+                </div>
+                <p className={releasePersonaje}>{text}</p>
             </a>
         </section>
     )
