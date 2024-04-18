@@ -18,21 +18,14 @@ const router = createBrowserRouter([{
   element: <Tierlist />,
 }
 ]);
-export const ThemeContext = createContext(null);
 
-export function App() {
-  const[theme, setTheme] = useState("dark")
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"))
-  }
-  return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
-      <div className='App' id={theme}>
-        <>
-          <Header/>
-          <RouterProvider router={router} />
-        </>
-      </div>
-    </ThemeContext.Provider>
+export function App(){
+  return(
+    <div className='App'>
+      <>
+      <Header/>
+      <RouterProvider router={router} />
+      </>
+    </div>
   )
-  }
+}

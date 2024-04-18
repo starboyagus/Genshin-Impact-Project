@@ -27,18 +27,3 @@
     background-position: 20%;
     background-attachment: local;
 }
-.nombre-personaje{
-    font-size: 20px;
-
-}
-
-.elem{
-    width: 24px;
-    height: 24px;
-    transform: translateY(5px);
-}
-
-.Textos{
-    position:static;
-    text-align: center;
-}

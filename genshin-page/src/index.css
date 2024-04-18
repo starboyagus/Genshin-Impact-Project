@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'RobotoRegular';
   src: url('./fonts/Roboto-Medium.ttf');
@@ -11,8 +15,7 @@
 :root{
   font-family: RobotoRegular;
   line-height: 1.5;
-  background-color: #111;
-
+  background-image: url(https://i.imgur.com/MKalUss.png);)
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

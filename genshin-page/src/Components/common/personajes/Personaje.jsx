@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Personaje.css'
+import { Link } from 'react-router-dom'
 
 function Personaje({nombre, elemento, nuevo, rareza}){
     const [isNew] = useState(nuevo)
@@ -42,15 +43,15 @@ function Personaje({nombre, elemento, nuevo, rareza}){
     };
 
     return(
-        <section className='personaje'>
-            <a href={nombre} className='referencia'>
-                <img src={'https://rerollcdn.com/GENSHIN/Characters/1/'+nombre+'.png'} className={rareza}/>
-                <div className='Textos'>
-                <span className='nombre-personaje'> {nombre} </span>
-                <img src={elementogen()} alt={elemento} className='elem' />
+        <section className=' px-3 rounded-lg mr-4 mt-3'>
+            <Link to={nombre} className='flex flex-wrap '>
+                <img src={'https://rerollcdn.com/GENSHIN/Characters/1/'+nombre+'.png'} className={rareza} />
+                <div className=' text-'>
+                    <span className='text-xl'> {nombre} </span>
+                    <img src={elementogen()} alt={elemento} className=' w-6 h-6' />
                 </div>
                 <p className={releasePersonaje}>{text}</p>
-            </a>
+            </Link>
         </section>
     )
 };
